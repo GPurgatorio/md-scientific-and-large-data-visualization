@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLDV - Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="res/landing_page.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md">
+        <a class="nav-link" href="https://github.com/GPurgatorio/Master-Computer-Science-ICT" target="_blank">Github</a>
+        <a class="nav-link" href="https://closed4women.it/datasets/" target="_blank">Datasets</a>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://plotly.com/javascript/" target="_blank">Plotly</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jquery.com/" target="_blank">JQuery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal-overlay" id="modal-overlay" onClick="closeInfos()"></div>
+        <div class="modal infos" id="infos">
+            <div class="tutorial" id="tutorial"> <br/>
+                <p align=center><b>Informations</b><br/></p>
+                This is a project made by Giulio Purgatorio for the course's exam of "Scientific and Large Data Visualization", Master Degree in Computer Science, Pisa (2020-2021).<br/><br/>
+                <p align=center><b>Aim of the project</b><br/></p>
+                The project aimed to see how much of granted funds were liquidated in Italy during the period 2016-2018, region by region. <br/>
+                Most of the used data comes from ActionAid directly and can be found in the Dataset link in the navigation bar: shown data is updated up to October 2020. <br/><br/>
+                <p align=center><b>About the project:</b><br/></p>
+                Many values were compared (e.g. the ratio between the two fund types, the behavior with respect to the previous year, etc.). <br/>
+                Hovering on a region highlights many pieces of information: the granted funds that were given for a specific reason like creating new refugees, or maintaining existing ones,
+                or expenses made for extra activities (e.g. school sensitization, etc.). <br/>
+                Moreover, a sunburst chart shows in a visual manner the actual liquidated funds and specifically when they were sent, for what reason, helping 
+                visualizing how much is missing from the total granted. <br/>
+                Finally, a stacked bar chart is visible to show off how the region was doing in 2017 and 2018 respectively, while the hovered region 
+                is highlighted to see if it's going better or worse than the previous year.<br/>
+            </div>
+        </div>
+    <div class="sfondo">
+        <div class="cta container rounded text-center text-white">
+            <div class="row">
+                <div class="col-7">
+                    <h1>Current state for funds to Women's Refuges in Italy</h1>
+                    <p class="lead">
+                        Scientific and Large Data Visualization (@Unipi, 2020-2021)
+                    </p>
+                    <p>
+                        Giulio Purgatorio, 516292
+                    </p>
+                    <div class="cntnr splash p-3">
+                        <div class="button big" onclick="openDemo()">Live Demo</div>
+                        <div class="button big" onclick="openInfos()">Info</div>
+                    </div>
+                </div>
+
+                <div class="col-5 oppression">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="res/layout.js"></script>
+
+  </body>
+
+</html>

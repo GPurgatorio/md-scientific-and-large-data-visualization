@@ -1,0 +1,157 @@
+.sfondo {
+    background: #4ba0c2;
+    height: 100vh;
+}
+
+.cta {
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+    background: #217596;
+    padding: 5rem;
+}
+
+.button {
+    background: #7d82da;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: background-color 0.2s, transform 0.3s, height 0.2s, padding 0.2s, min-width 0.2s, font-size 0.2s, width 0.2s;
+    top: 50%;
+    left: 50%;
+}
+.button.big {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+}
+.button:hover {
+    background: #0019f5a2;
+}
+.button.big:hover {
+    transform: scale(1.2);
+}
+.button.red {
+    background: #ec644b;
+}
+.setup-button.hidden {
+    height: 0;
+    padding: 0;
+    font-size: 0;
+    min-width: 0;
+    width: 0;
+}
+.button.modal-button {
+    width: 200px;
+}
+
+.cntnr {
+    width: 100%;
+    display: flex; 
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.cntnr.splash {
+    flex-direction: column;
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.modal-overlay.shown {
+    display: block;
+    z-index: 4;
+}
+  
+.modal {
+    background: rgb(145, 145, 145);
+    border-radius: 4px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.modal.vertical {
+    flex-direction: column;
+}
+.modal.transparent {
+    bottom: 100%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s, transform 0.5s;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.modal.pause.shown {
+    z-index: 5;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+.modal.infos.shown {
+    display: flex;
+    z-index: 5;
+}
+.modal.setting.shown {
+    display: flex;
+    z-index: 6;
+}
+.tutorial {
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+    transition: all 2s ease;
+}
+.tutorial.active {
+    transform: scale(1.2);
+}
+
+/*--- navigation bar ---*/
+.navbar {
+	background:#444bad;
+}
+.nav-link,
+.navbar-brand {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+.nav-link {
+	margin-right: 1em !important;
+}
+.nav-link:hover {
+	color: #000;
+}
+.navbar-collapse {
+	justify-content: flex-end;
+}
+.a.navbar-brand:hover {
+    color: #000;
+}
+
+.oppression {
+    background: url('../img/splash.png') no-repeat center / cover;
+    opacity: 0.8;
+}

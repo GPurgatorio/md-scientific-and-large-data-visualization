@@ -1,0 +1,484 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	padding: 0;
+	margin: 0;
+	background: lightblue;
+	font: 16px 'Open Sans', sans-serif;
+  }
+  
+  .column {
+	float: left;
+	width: 50%;
+  }
+  
+  /*--- navigation bar ---*/
+  .nav-link,
+  .navbar-brand {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+  }
+  .nav-link {
+	margin-right: 1em !important;
+  }
+  .nav-link:hover {
+	color: #000;
+  }
+  .navbar-collapse {
+	justify-content: flex-end;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  .top-buffer { 
+	margin-top:20px;
+  }
+  
+  /* Custom CSS */
+  .row-center {
+	text-align: center;
+  }
+  
+  h3 {
+	color: #0047b3;
+  }
+
+  h1 {
+	  font-size: 34px;
+  }
+
+/* --------------------CSS----------------- */
+
+.lightblue {
+	background-color: #b0bfe9;
+}
+
+
+.box {
+	background: linear-gradient(#271f99de, #55244e);
+	margin: 15px auto 0;
+	border-radius: 5px;
+	width: 300px;
+    height: 300px;
+	position: relative;
+	/*left: 450px;*/
+}
+
+.box__header {
+	padding: 7px 7px;
+}
+
+.box__header-title {
+	color: #fff;
+	font-size: 18px;
+}
+
+.box__body {
+	padding: 0 20px;
+}
+
+/* STATS */
+
+.stats {
+	color: #fff;
+	position: relative;
+	padding-bottom: 25px;
+}
+
+.stats__amount {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.stats__caption {
+	font-size: 13px;
+
+}
+
+.stats__change {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	text-align: right;
+	color: #B1B7C8;
+}
+
+.stats__value {
+	font-size: 16px;
+}
+
+.stats__period {
+	font-size: 12px;
+}
+
+.stats__value--positive {
+	color: #AEDC6F;
+}
+
+.stats__value--negative {
+	color: #FB5055;
+}
+
+.stats--main .stats__amount {
+	font-size: 17px;
+}
+
+
+
+path {
+    stroke : black;
+    fill : url(#greenGradient);
+    -webkit-transition: opacity .8s ease;
+    -moz-transition: opacity .8s ease;
+    -o-transition: opacity .8s ease;
+    transition: opacity .8s ease;
+}
+
+	path.red-gradient {
+		fill: url(#redGradient)
+	}
+	path.orange-gradient {
+		fill: url(#orangeGradient)
+	}
+	path.yellow-gradient {
+		fill: url(#yellowGradient)
+	}
+	path.lawngreen-gradient {
+		fill: url(#lawngreenGradient)
+	}
+	path.green-gradient {
+		fill: url(#greenGradient)
+	}
+	path.blue-gradient {
+		fill: url(#blueGradient)
+	}
+
+	path:hover {
+		cursor: pointer;
+		opacity: 1.0;
+		fill: #1f21b3;
+	}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+	font-family: Arial;
+}
+  
+.custom-select select {
+	display: none; /*hide original SELECT element: */
+}
+  
+.select-selected {
+	background-color: DodgerBlue;
+}
+  
+/* Style the arrow inside the select element: */
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+  
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+  
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+}
+  
+/* Style items (options): */
+.select-items {
+	position: absolute;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+  
+/* Hide the items when the select box is closed: */
+.select-hide {
+	display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.select {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 250px;
+	height: 40px;
+}
+  
+.option {
+	padding: 0 30px 0 10px;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	background:#333;
+	border-top:#222 solid 1px;
+	position: absolute;
+	top:0;
+	width: 100%;
+	pointer-events: none;
+	order:2;
+	z-index:1;
+	transition: background .4s ease-in-out;
+	box-sizing: border-box;
+	overflow: hidden;
+	white-space: nowrap;
+}
+  
+.option:hover {
+	background:#666;
+}
+  
+.select:focus .option {
+	position:relative;
+	pointer-events:all;
+}
+  
+input {
+	opacity:0;
+	position:absolute;
+	left:-99999px;
+}
+  
+input:checked + label {
+	order: 1;
+	z-index:2;
+	background:#666;
+	border-top: none;
+	position: relative;
+}
+  
+input:checked + label:after {
+	content:'';
+	width: 0; 
+	  height: 0; 
+	  border-left: 5px solid transparent;
+	  border-right: 5px solid transparent;
+	  border-top: 5px solid white;
+	position: absolute;
+	right:10px;
+	top:calc(50% - 2.5px);
+	pointer-events: none;
+	z-index:3;
+}
+  
+input:checked + label:before {
+	position:absolute;
+	right:0;
+	height: 40px;
+	width: 40px;
+	content: '';
+	background:#666;
+}
+
+
+.btn-group {
+  filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
+}
+
+.btn-group .btn{
+  height: 36px;
+  width: 100px;
+  background: linear-gradient(to bottom, #556dda, #2a1072);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem; 
+  padding: 0;
+  stroke: black;
+}
+.btn-group :nth-child(1){
+  border-radius: 20px 0 0 20px;
+}
+.btn-group :nth-child(3){
+  border-radius: 0 20px 20px 0;
+}
+.btn:hover{
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+}
+.btn-group .btn.active{
+	color: rgb(186, 252, 33) !important;
+  	transform: scale(.95);
+}
+
+.region.selected {
+	fill: #1f21b3;
+	border-width: 3;
+}
+
+
+
+/**  Select  */
+
+span.msg,
+span.choose {
+	color: #555;
+	padding: 5px 0 10px;
+	display: inherit
+}
+.container {
+	width: 500px;
+	margin: 10px auto 0;
+	text-align: center
+}
+
+.dropdown {
+	width: 260px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 0 2px rgb(204, 204, 204);
+	transition: all .5s ease;
+	position: relative;
+	font-size: 14px;
+	color: #474747;
+	height: 100%;
+	text-align: left;
+	left: 0px;
+}
+.dropdown .select {
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+}
+.dropdown .select > i {
+	font-size: 13px;
+	color: #888;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	float: right;
+	line-height: 20px
+}
+.dropdown:hover {
+	box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+	background-color: #f8f8f8
+}
+.dropdown.active:hover,
+.dropdown.active {
+	box-shadow: 0 0 4px rgb(204, 204, 204);
+	border-radius: 2px 2px 0 0;
+	background-color: #f8f8f8
+}
+.dropdown.active .select > i {
+	transform: rotate(-90deg)
+}
+.dropdown .dropdown-menu {
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	left: 0;
+	margin-top: 1px;
+	box-shadow: 0 1px 2px rgb(204, 204, 204);
+	border-radius: 0 1px 2px 2px;
+	overflow: hidden;
+	display: none;
+	max-height: 144px;
+	overflow-y: auto;
+	z-index: 9
+}
+.dropdown .dropdown-menu li {
+	padding: 10px;
+	transition: all .2s ease-in-out;
+	cursor: pointer
+} 
+.dropdown .dropdown-menu {
+	padding: 0;
+	list-style: none
+}
+.dropdown .dropdown-menu li:hover {
+	background-color: #f2f2f2
+}
+.dropdown .dropdown-menu li:active {
+	background-color: #e2e2e2
+}
+
+.select:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 8px;
+    top: 50%;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border-top: 6px solid #000000;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+}
+
+
+.scale {
+	height: 250px;
+	width: 30px;
+	background: linear-gradient(to top, #0000ff, #9e9eff);
+	position: absolute;
+	top: 380px;
+	left: 20px;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scale::before, .scale::after {
+	position: absolute;
+	display: block;
+	color: #fff;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.scale::before {
+	content: '+';
+	color: #0000ff;
+	top: 10px;
+}
+
+.scale::after {
+	content: '-';
+	bottom: 10px;
+}
+
+.funds-label {
+	transform: rotate(-90deg);
+	color: #fff;
+}
+
+#italy_svg {
+	margin-left: -20px;
+}
