@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/GPurgatorio/md-scientific-and-large-data-visualization">
-    <img src="img/infographic.png" alt="KNN" width="80" height="80">
+    <img src="img/infographic.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Scientific and Large Data Visualization</h3>
@@ -88,4 +88,4 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 [issues-url]: https://github.com/GPurgatorio/md-scientific-and-large-data-visualization/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/GPurgatorio
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: img/screenshot.png
