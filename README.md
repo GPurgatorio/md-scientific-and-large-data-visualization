@@ -44,8 +44,12 @@
 Repository for the _Scientific and Large Data Visualization_'s course, Pisa's university (2020-2021).
 
 It's an infographic (large data visualization) on women's refuges (specifically Case Rifugio and Centri Antiviolenza) in Italy, region by region (years 2016-2018).
-Data comes from ActionAid's databases and is updated up to October 2020. There are economical comparisons between regions that can be highlighted by clicking and/or hovering on specific ones. We thought that relevant topics were the funds towards creating new structures, funds towards maintaining existing ones and funds towards extra activies (e.g. school sensitizations).
+Data comes from ActionAid's databases and is updated up to October 2020. There are economical comparisons between regions that can be highlighted by clicking and/or hovering on specific ones. 
+
+We thought that relevant topics were the funds towards creating new structures, funds towards maintaining existing ones and funds towards extra activies (e.g. school sensitizations).
+
 The main topic if you choose this type of project is being able to use visual channels in the right way: beside that, the exam isn't about anything else you may think would be useful on an actual site (no optimized code, yes to hardcoded stuff, and so on). 
+
 Furthermore, all of this evolved from time to time with many different ideas and since code wasn't going to be reviewed, there are leftovers here and there and weird jumps in the control flow just because refactoring everything would have no impact in the final exam: please, do not take this specific repository to see how I would organize a website :D
 
 
@@ -68,6 +72,8 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE` for
 
 
 ## Attributions 
+
+I'd like to thank for this opportunity my two teachers, D. Giorgi and M. Corsini, but also all the others that have contributed to it: G. Vingelli, I. Organno, R. Scaricabarozzi and R. Silvestre.
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
