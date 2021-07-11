@@ -43,6 +43,8 @@
 
 Repository for the _Scientific and Large Data Visualization_'s course, Pisa's university (2020-2021).
 
+_[SLDV notes.pdf](https://github.com/GPurgatorio/md-scientific-and-large-data-visualization/blob/main/SLDV%20notes.pdf) is a resume of the main topics we studied during the course. Being self-made there may be errors, but it could be a good place to start (they're in italian though)._
+
 It's an infographic (large data visualization) on women's refuges (specifically Case Rifugio and Centri Antiviolenza) in Italy, region by region (years 2016-2018).
 Data comes from ActionAid's databases and is updated up to October 2020. There are economical comparisons between regions that can be highlighted by clicking and/or hovering on specific ones. 
 
